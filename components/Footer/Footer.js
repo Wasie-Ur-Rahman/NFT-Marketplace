@@ -1,7 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
 
+import React from 'react'
+import { useRouter } from 'next/router'
 export default function Footer() {
+  const router = useRouter()
   return (
     
     <div>
@@ -20,15 +21,15 @@ export default function Footer() {
 </div>
 <div className='flex flex-col h-full w-1/4  justify-center items-start space-y-2 '> 
 <p className='flex flex-col  dark:text-white text-gray-600 text-lg font-semibold' >About Us </p>
-<a className='flex flex-col  dark:text-white text-gray-600 font-normal' href='/About_Us'>About</a>
-<a className='flex flex-col dark:text-white text-gray-600 font-normal' href='/Terms_Service'>Terms of Service </a>
+<button className='flex flex-col  dark:text-white text-gray-600 font-normal placeholder:dark:text-white placeholder:text-gray-600 ' onClick={(e) => { router.push('/About_Us') }} >About</button>
+<button className='flex flex-col dark:text-white text-gray-600 font-normal placeholder:dark:text-white placeholder:text-gray-600'  onClick={(e) => { router.push('/Terms_Service') }} >Terms of Service</button>
 
 </div>
 <div className='flex flex-col h-full w-1/4  justify-center items-start space-y-2 '> 
 
-<p className='flex flex-col  dark:text-white text-gray-600 text-lg font-semibold ' >Contact Us </p>
- <a className='flex flex-col dark:text-white text-gray-600 font-normal' href="mailto:wasieurrahman24@gmail.com">Email info@nftverse.com</a>
-<a className='flex flex-col dark:text-white text-gray-600 font-normal' href='/policies'>Policies </a>
+<p className='flex flex-col  dark:text-white text-gray-600 text-lg font-semibold  ' >Contact Us </p>
+ {/* <button className='flex flex-col dark:text-white text-gray-600 font-normal placeholder:dark:text-white placeholder:text-gray-600' href="mailto:wasieurrahman24@gmail.com" placeholder='Email info@nftverse.com'/> */}
+<button className='flex flex-col dark:text-white text-gray-600 font-normal placeholder:dark:text-white placeholder:text-gray-600'  onClick={(e) => { router.push('/policies') }} >Policies</button>
 
 
 </div>

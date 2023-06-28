@@ -145,9 +145,10 @@ console.log("Individual Data",data)
 {data.map((nft,index ) => (
    
 
-    <Card link={`/sell_nft/${data1[index].id}`} image={nft.file}  edition={'1'} name={nft.name} Discription={nft.description} type={nft.type}  >
+    <Card key={index} link={`/sell_nft/${data1[index].id}`} image={nft.file}  edition={'1'} name={nft.name} Discription={nft.description} type={nft.type}  >
                  
              </Card>
+             
       
                 ))}
          

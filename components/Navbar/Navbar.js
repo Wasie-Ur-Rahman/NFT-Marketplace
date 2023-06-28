@@ -2,10 +2,9 @@
 import React, { useEffect } from 'react'
 import DarkModeButton from '../DarkModeButton'
 import { useState } from 'react';
-
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Web3 from "web3";
-
 let address;
 let account;
 
@@ -118,10 +117,10 @@ const home=()=>
                 <div className="dropdown dropdown-bottom xs:hidden ">
       <button tabIndex={0} className="  w-28 h-[30px]  dark:bg-gray-900 dark:border-gray-800  border-2 items-center justify-center rounded-xl  dark:text-white  bg-[#000000] text-white border-gray-400 text-sm font-secondary  placeholder:text-white">{address}</button>
       <ul tabIndex={0} className="dropdown-content menu p-1   rounded-box w-28 dark:bg-slate-900 bg-[#000000] ">
-        <li><a className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm' href='/accounts_detail'>Account</a></li>
-        <li><a className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm' href='/mint'>Mint</a></li>
-        <li><a  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" href='/UserNft'>Nfts</a></li>
-        <li><a  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm"  onClick={()=>{route.push("/GoogleAuth")}}>Disconnect</a></li>
+        <li><button className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm'  onClick={(e) => { route.push('/accounts_detail') }}>Account</button></li>
+        <li><button className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm'  onClick={(e) => { route.push('/mint') }}>Mint</button></li>
+        <li><button  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={(e) => { route.push('/UserNft') }}>Nfts</button></li>
+        <li><button  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm"  onClick={()=>{route.push("/GoogleAuth")}}>Disconnect</button></li>
       </ul>
     </div>
             
@@ -148,14 +147,14 @@ const home=()=>
               </button>
       
           <ul tabIndex={0} className="dropdown-content menu p-1   rounded-box w-28 dark:bg-slate-900 bg-[#000000] ">
-            <li><a className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm' href='/home'>Home</a></li>
-            <li><a className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm' href='/Discover'>Discover</a></li>
-            <li><a  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" href='/Search_Page'>Search</a></li>
-            <li><a  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" href='/UserNft'>Nfts</a></li>
+            <li><button className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm'  onClick={(e) => { route.push('/home') }}>Home</button></li>
+            <li><button className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm'  onClick={(e) => { route.push('/Discover') }}>Discover</button></li>
+            <li><button  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm"  onClick={(e) => { route.push('/Search_Page') }}>Search</button></li>
+            <li><button  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={(e) => { route.push('/UserNft') }}>Nfts</button></li>
         
-            <li><a  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" href='/accounts_detail'>Account</a></li>
-            <li><a  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" href='/mint'>Mint</a></li>
-            <li><a  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm"  onClick={()=>{route.push("/GoogleAuth")}}>Disconnect</a></li>
+            <li><button className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm"  onClick={(e) => { route.push('/accounts_detail') }}>Account</button></li>
+            <li><button  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm"  onClick={(e) => { route.push('/mint') }}>Mint</button></li>
+            <li><button  className ="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm"  onClick={()=>{route.push("/GoogleAuth")}}>Disconnect</button></li>
           </ul>
         </div>            
          

@@ -101,9 +101,19 @@ const buy_ui = () => {
                  <div class=" h-3 w-60 bg-slate-100 rounded"></div>
                                       
                                      
-                 {array.map(() => (
-          <div class=" h-3 w-60 bg-slate-100 rounded"></div>
-        ))}
+                 {/* {array.map( user=> (
+          <div class=" h-3 w-60 bg-slate-100 rounded">
+            {user}
+          </div>
+        ))} */}
+         <div class=" h-3 w-60 bg-slate-100 rounded">
+         </div>
+         <div class=" h-3 w-60 bg-slate-100 rounded"></div>
+         <div class=" h-3 w-60 bg-slate-100 rounded"></div>
+         <div class=" h-3 w-60 bg-slate-100 rounded"></div>
+         <div class=" h-3 w-60 bg-slate-100 rounded"></div>
+         
+        
                                       
                                    
                                 

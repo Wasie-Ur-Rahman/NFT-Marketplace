@@ -330,7 +330,7 @@ async function read()
                             {history.map((history,index) => (
                            
                              
-<div>
+<div key={index}> 
 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">{history.event}</td>
 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">{history.time}</td>
 <td><a class="text-blue-500 hover:text-blue-700" href={`https://goerli.etherscan.io/tx/${history.tx}`}>{history.tx}</a></td>
