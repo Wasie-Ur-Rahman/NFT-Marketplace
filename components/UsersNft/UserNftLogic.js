@@ -314,7 +314,7 @@ const UserNftLogic = ({ }) => {
 
                         {data.map((nft, index) => (
 
-                            <div>
+                            <div key={index}>
                                 <Card key={index} link={`/sell_nft/${data1[index].id}`} image={nft.file} edition={'1'} name={nft.name} Discription={nft.description} type={nft.type}></Card>
                             </div>
                         ))}
