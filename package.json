@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "nft-marketplace",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,44 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-   
-   
-    "@firebase/app": "^0.9.3",
-  
-   
- 
- 
-
-    "cross-fetch": "^3.1.6",
-   
-    "eslint-config-next": "^13.1.6",
     "firebase": "^9.17.1",
-    "googleapis": "^118.0.0",
     "ipfs-http-client": "^60.0.0",
-   
     "next": "^13.1.1",
+    "react":"^18.2.0",
     "next-themes": "^0.2.1",
-    "react": "^18.3.0-next-6eadbe0c4-20230425",
     "react-cookie": "^4.1.1",
-    "react-dom": "^18.3.0-next-6eadbe0c4-20230425",
-    
-    "react-dropdown": "^1.11.0",
-    "react-firebase-hooks": "^5.1.1",
-    "react-suspense-async-effect": "^1.16.1",
-    "react-toggle-dark-mode": "^1.1.1",
-    "reactjs-popup": "^2.0.5",
-    "reactstrap": "^9.1.10",
-    "ui": "^0.2.4",
-    "use-react-suspense": "^0.5.0"
+    "web3": "^1.7.3",
+    "daisyui": "^2.50.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.43.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^16.0.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   }
