@@ -24,7 +24,14 @@ const GAuth = ({ }) => {
             setAuth({authUser: result.user.uid, account: result.user.email});
             setIsAuth(true)
             console.log(Auth)
+            return(result.user.uid)
+           
+        }).then((username)=> {
+            return new Date(username.tokensValidAfterTime).getTime()
+
         })
+          
+         
         .catch((error) => {
           setError(error.message)
         });
