@@ -297,7 +297,7 @@ export default function Navbar() {
                 <li><button className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm' onClick={(e) => { route.push('/accounts_detail') }}>Account</button></li>
                 <li><button className=' dark:bg-gray-900 dark:border-gray-800    dark:text-white  bg-[#000000]  text-white  border border-gray-800 hover:animate-pulse text-sm' onClick={(e) => { route.push('/mint') }}>Mint</button></li>
                 <li><button className="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={(e) => { route.push('/UserNft') }}>Nfts</button></li>
-                <li><button className="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={() => { route.push("/GoogleAuth") }}>Disconnect</button></li>
+                <li><button className="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={() => { route.push("/MetamaskAuth") }}>Disconnect</button></li>
               </ul>
             </div>
 
@@ -331,7 +331,7 @@ export default function Navbar() {
 
             <li><button className="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={(e) => { route.push('/accounts_detail') }}>Account</button></li>
             <li><button className="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={(e) => { route.push('/mint') }}>Mint</button></li>
-            <li><button className="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={() => { route.push("/GoogleAuth") }}>Disconnect</button></li>
+            <li><button className="dark:bg-gray-900 dark:border-gray-800   dark:text-white  bg-[#000000]  text-white border border-gray-800  hover:animate-pulse text-sm" onClick={() => { route.push("/MetamaskAuth") }}>Disconnect</button></li>
           </ul>
         </div>
 

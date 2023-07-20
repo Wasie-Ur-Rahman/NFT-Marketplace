@@ -11,7 +11,7 @@ export default function User_redirect_logic() {
                               
                                   <div className="flex flex-col h-fit w-fit xs:mt-14 sm:mt-14 mt-24"  >
                                   
-                                      <button onClick={()=>{router.push("/GoogleAuth")}} className=" input rounded-md h-10 w-40 border border-double  bg-gray-900 text-[#000000]  hover:bg-[#000000] hover:text-white dark:text-white dark:bg-slate-900 dark:hover:text-black dark:hover:bg-white text-sm font-semibold items-center p-2  xs:w-32  xs:h-8 xs:mt-5   text-center"  >Nft Minter</button>
+                                      <button onClick={()=>{router.push("/MetamaskAuth")}} className=" input rounded-md h-10 w-40 border border-double  bg-gray-900 text-[#000000]  hover:bg-[#000000] hover:text-white dark:text-white dark:bg-slate-900 dark:hover:text-black dark:hover:bg-white text-sm font-semibold items-center p-2  xs:w-32  xs:h-8 xs:mt-5   text-center"  >Nft Minter</button>
                                       <span className="flex flex-row max-h-fit max-w-fit  -my-9 mx-8 xs:mx-1 xs:-my-7  "></span>
                                   </div>
                              
